@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+
+
+    <!-- poster:image for video بيبدا بيها
+         preload="auto"  اعمل تحميل تلقائي عشان يشتغل بسرعه عيبها انها بتبطئ الموقع بتاعك
+         preload="none"  مش هيحمل غير اما اضغط ع تشغيل الفيديو
+         
+
+         ملفات الترجمة لو عاوز اضيف للفيديو ترجمة
+         <track default src = "en.vtt" kind ="subtitles" label ="english">
+        default: الترجمة تظهر بشكل اوتوماتيك
+         
+    -->
+    <video controls width="230" height="200"   loop muted   
+    poster="images/test_img.jpg"
+    preload="none"
+
+    >
+        <source src="videos/g.mp4" type="video/mp4">
+        <source src="videos/g.ogg" type="video/ogg">
+        Your Browser does not support this video
+
+    </video>
+    
+</body>
+</html>
