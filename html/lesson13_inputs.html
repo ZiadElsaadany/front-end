@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+
+
+<body>
+
+    <form>
+        <!-- numbers input-->
+        <input  type="number">
+        <!-- text input-->
+        <label >userName </label>
+
+        <input  type="text">
+        <!-- checkbox input-->
+        <input  type="checkbox">
+
+        <br/>  
+         <!-- password input-->
+         <input  type="password"  >
+
+         <!-- Email input-->
+         <input  type="email"  >
+
+          <!-- telephone input-->
+          <input  type="tel"  >
+
+
+
+        
+    </form>
+<hr>
+
+
+<!-- fieldset:   بتعملي مربع حوالين الفورم-->
+<fieldset>
+
+    <!--  بيعمل زي label 
+     للفورم  
+    -->
+    <legend> Login</legend>
+    <form>
+        <div>
+            <!--    id & for  عشان لو اتكيت ع العنوان يفتح الانبوت    -->
+            <label for="txt">User Name</label>
+
+
+            <!-- value: بديله قيمة ابتدائية-->
+            <input type="text" id="txt" placeholder="ziad"  value="ziad"  required>
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input type="password"id = "pass" placeholder="123"   required>
+        </div>
+
+        <div>
+            <!--    يرسل البيانات لل form  -->
+            <input type="submit" value="اضغط هنا لتسجيل البيانات في الفورم"  >
+        </div>
+    </form>
+</fieldset>
+    
+</body>
+</html>
