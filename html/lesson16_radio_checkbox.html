@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio And CheckBox Inputs</title>
+</head>
+
+<body>
+
+
+    <form>
+        <div>
+            <!--  one answer only -->
+            <label for="radio"> Radio Button:: </label>
+            <input type="radio" id="radio">
+
+        </div>
+
+        <div>
+            <!-- Multi Answer -->
+            <label for="checkbox">checkbox:: </label>
+            <input type="checkbox" id="checkbox">
+        </div>
+    </form>
+
+    <h2> What Is Your Favourite Language</h2>
+    <!-- 
+    name attribute : عشان يقدر يعرف ان الاختيارات دي كلها تبع بعض 
+    كدا القيمة اللي هيختارها هتتخزن في ال lang
+    -->
+    <form >
+        <div>
+            <label for="arabic"> Arabic </label>
+            <input type="radio" id="arabic" value="arabic" name="lang">
+
+        </div>
+
+        <div>
+            <label for="English">English </label>
+            <input type="radio" id="English" value="English" name="lang">
+
+        </div>
+        <div>
+            <label for="Frensh">Frensh </label>
+            <input type="radio" id="Frensh" value="Frensh"  name="lang">
+
+        </div>
+        <!--     submit to store value in lang      -->
+        <input type="submit" value="submit">
+    </form>
+
+    <h2> Choose Your Programming Language</h2>
+    <!-- 
+    name attribute : عشان يقدر يعرف ان الاختيارات دي كلها تبع بعض 
+    كدا القيمة اللي هيختارها هتتخزن في ال lang
+    -->
+    <form >
+        <div>
+            <label for="PHP"> PHP </label>
+            <input type="checkbox" id="PHP" value="PHP" name="programmingLang">
+
+        </div>
+
+        <div>
+            <label for="Dart">Dart </label>
+            <input type="checkbox" id="Dart" value="Dart" name="programmingLang">
+
+        </div>
+        <div>
+            <label for="C++">C++ </label>
+            <input type="checkbox" id="C++" value="C++"  name="programmingLang">
+
+        </div>
+        <!--     submit to store value in programmingLang      -->
+        <input type="submit" value="submit">
+    </form>
+
+
+</body>
+
+</html>
