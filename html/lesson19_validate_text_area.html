@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate TextArea</title>
+</head>
+
+<body>
+
+    <!-- noValidate : :   متشغلش اي فاليديت-
+     
+target : تفتح ف نفس التاب ولا ف تاب_self or _blank
+    
+-->
+    <form  novalidate  target="_self">
+
+        <!-- macLenght: number of characters -->
+        <input type="text" required   maxlength="10"  disabled>
+        <br />
+        <hr />
+        <!--   
+        بيتكتب فيه كونتنت كبير
+        cols : default width  اعمدة
+        rows : default height  صفوف
+        required: مطلوب
+        autofocus:  focus  
+        readonly:    no writing in it   == disabled ?  no  
+        disabled :   مبيتبعتش مع الفورم  زي ال id بتاعت المستخدم مثلا
+        readonly: مقدرش اعدل ع القيمة مجرد نسخ فقط وبيبعت البيانات مع الففورم يعني هو شايف الداتا بس مبيتعاملش معاها
+
+        -->
+        <div>
+            <textArea
+             cols="100"
+             rows="3"
+             placeholder="content..." 
+             required
+             maxlength="20"
+             minlength="11"
+             autofocus
+             
+            
+             >   
+             </textArea>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
