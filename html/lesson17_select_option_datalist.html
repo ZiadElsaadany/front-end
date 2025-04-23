@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date List</title>
+</head>
+
+<body>
+
+
+    <form>
+
+        <!-- 
+        
+        قائمة منسدلة 
+
+        multiple attribute: عشان يقدر يختار اكتر من اختيار ف القائمة المنسدلة
+        selected:      initial value
+        optgroup: عشان لو عاوز تحط كذا اختيار ف جروب واحد زي الدول العربية والدول الاجنبيةوممكن اديله عنوان
+        -->
+        <label for="country"> What Is Your Country? </label>
+        <select name="country" id="country" multiple>
+            <optgroup label="Arabic Countries">
+                <option value="Egypt" selected> Egypt</option>
+                <option value="SaudiArabia"> Saudi Arabia</option>
+            </optgroup>
+            <optgroup>
+                <option value="Amrica" selected> Amrica</option>
+                <option value="Germany"> Germany</option>
+            </optgroup>
+
+        </select>
+        <input type="submit">
+       
+
+    </form>
+
+    <br>
+    <hr>
+    <!-- 
+    name: بيتم ارسال الداتا عليه
+    list: data list with search
+    id value = list value عشان يقدر يميز
+    -->
+   <form >
+
+    <input list="language" name="lang" required>
+    <dataList id="language">
+
+        <option value="C++">
+        <option value="java">
+        <option value="PHP">
+
+
+    </dataList>
+
+    <input type="submit" >
+   </form>
+
+</body>
+
+</html>
